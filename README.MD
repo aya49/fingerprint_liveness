@@ -17,9 +17,9 @@
 
 ## 3. Neural Network using Keras in python
 + Simple Dense Neural Networks to classify the features:
-  + BSIF Features: [bsif_nn](./NeuralNetwork/2015DigPer_test_BSIF.py)
-  + LPQ Features: [lpq_nn](./NeuralNetwork/2015DigPer_test_LPQ.py)
-  + WLD Features: [eld_nn](./NeuralNetwork/2015DigPer_test_WLD.py)
+  + BSIF Features: [BSIF_nn](./NeuralNetwork/2015DigPer_test_BSIF.py)
+  + LPQ Features: [LPQ_nn](./NeuralNetwork/2015DigPer_test_LPQ.py)
+  + WLD Features: [WLD_nn](./NeuralNetwork/2015DigPer_test_WLD.py)
   + Mixed Features: [mixfeat_nn](./NeuralNetwork/2015DigPer_test_MixFeat.py)
   + Convnet Features: [convnet_nn.py](./NeuralNetwork/convnet_nn.py)  
 + VGG16 model are trained using [train_vgg16.py](./NeuralNetwork/train_vgg16.py)
