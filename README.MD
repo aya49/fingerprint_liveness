@@ -26,7 +26,5 @@
 + VGG16+vector multibranch models are trained using [train_multi.py](./NeuralNetwork/train_multi.py). Note: merge features first using [merge_features.py](./NeuralNetwork/merge_features.py)
 + their data generator functions can be found in [gen.py](./NeuralNetwork/gen.py)
 
-## Poster Preview
-![Poster](https://cloud.githubusercontent.com/assets/22108101/21119571/016675c0-c078-11e6-80be-39bf02a124e8.png)
-
-## The Final Report can be found [here](fingerprint-liveness-detection.pdf)
+## Models Tested
+![Poster](./networkdiagrams.png)
