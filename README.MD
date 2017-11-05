@@ -9,7 +9,7 @@ In this project, we explored two different methods (SVM & Neural Network) for fi
   + Binary Statistical Image Filter(BSIF), in folder [BSIF_feature](BSIF_feature)
   + Local Phase Quantization(LPQ), in folder [LPQ_feature](LPQ_feature)
   + Weber Local Descriptor(WLD), in folder [WLD_feature](WLD_feature)
-  + Convnet-Features(CNN), in [extract_features.py](./convnet-features/extract_features.py)
+  + Convnet Features: [convnet_nn.py](./NeuralNetwork/convnet_nn.py)  
   
 ## SVM using sklearn in python
 + Support Vector Machine (SVM) in [SVM_classifiy](SVM_classifiy)
@@ -24,7 +24,7 @@ In this project, we explored two different methods (SVM & Neural Network) for fi
   + LPQ Features: [2015DigPer_test_LPQ.py](./NeuralNetwork/2015DigPer_test_LPQ.py)
   + WLD Features: [2015DigPer_test_WLD.py](./NeuralNetwork/2015DigPer_test_WLD.py)
   + Mix Features: [2015DigPer_test_MixFeat.py](./NeuralNetwork/2015DigPer_test_MixFeat.py)
-  + Convnet Features: [convnet_nn.py](./NeuralNetwork/convnet_nn.py)  
+
 + VGG16 model is trained using [train_vgg16.py](./NeuralNetwork/train_vgg16.py)
 + VGG16+vector multibranch models are trained using [train_multi.py](./NeuralNetwork/train_multi.py). We first merge features using [merge_features.py](./NeuralNetwork/merge_features.py)
 + Their data generator functions can be found in [gen.py](./NeuralNetwork/gen.py)
