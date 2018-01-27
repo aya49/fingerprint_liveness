@@ -34,4 +34,4 @@ In this project, we explored two different methods (SVM & Neural Network) for fi
 ![alt text](models.png)
 
 ## Results
-![alt text](result.png)
+![alt text](result.PNG)
