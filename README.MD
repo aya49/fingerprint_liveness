@@ -30,5 +30,8 @@ In this project, we explored two different methods (SVM & Neural Network) for fi
 + Their data generator functions can be found in [gen.py](./NeuralNetwork/gen.py)
 
 
+## Models
+![alt text](models.png)
 
-The Final Report can be found [here](fingerprint-liveness-detection.pdf).
+## Results
+![alt text](result.png)
