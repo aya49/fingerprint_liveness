@@ -15,7 +15,7 @@ In this project, we explored two different methods (SVM & Neural Network) for fi
 + Support Vector Machine (SVM) in [SVM_classifiy](SVM_classifiy)
   + [svm_fingerpint_liveness_detection_foldval.py](./SVM_classifiy/svm_fingerpint_liveness_detection_foldval.py) is for cross validation
   + [svm_fingerprint_liveness_detection_2015.py](./SVM_classifiy/svm_fingerprint_liveness_detection_2015.py) is for SVM test, which draws the ROC curve and calculate the AUC values.
-  + [convnet_svm.py](./SVM_classifiy/convnet_svm.py) is for the CNN features
+  + [convnet_svm.py](./SVM_classifiy/convnet_svm.py) is for the CNN features (requires [CNN-RFW](https://github.com/giovanichiachia/convnet-rfw))
   + The result images are in [svm_2015_result](./SVM_classifiy/svm_2015_result)
 
 ## Neural Network using Keras in python
