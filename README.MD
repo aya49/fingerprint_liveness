@@ -1,33 +1,41 @@
 # Fingerprint Liveness Detection Project
 
-In this project, we explored two different methods (SVM & Neural Network) for fingerprint liveness detection.
+In this project, we explored two different methods (SVM & Neural Network) for fingerprint liveness detection. Please change input and output paths in the scripts asvappropriate and run in the order as numbered, bullet points mean scripts can be ran in any order
+
+Data: We use the fingerprint images data set from "Liveness Detection Competitions 2015" [Available Here](http://livdet.org/registration.php).
 
 ## Feature extraction
-+ We use the fingerprint images from "Liveness Detection Competitions 2015" [Available Here](http://livdet.org/registration.php).
-+ For the image augmentation, please refer to: [augment_data.py](augment_data.py)
-+ Four extractors we applied:
+
+1. (optional, recommended) For the image augmentation, please refer to: [augment_data.py](augment_data.py)
+2. Four feature extraction methods applied:
   + Binary Statistical Image Filter(BSIF), in folder [BSIF_feature](BSIF_feature)
   + Local Phase Quantization(LPQ), in folder [LPQ_feature](LPQ_feature)
   + Weber Local Descriptor(WLD), in folder [WLD_feature](WLD_feature)
   + Convnet Features: [convnet_nn.py](./NeuralNetwork/convnet_nn.py)  
   
 ## SVM using sklearn in python
-+ Support Vector Machine (SVM) in [SVM_classifiy](SVM_classifiy)
-  + [svm_fingerpint_liveness_detection_foldval.py](./SVM_classifiy/svm_fingerpint_liveness_detection_foldval.py) is for cross validation
-  + [svm_fingerprint_liveness_detection_2015.py](./SVM_classifiy/svm_fingerprint_liveness_detection_2015.py) is for SVM test, which draws the ROC curve and calculate the AUC values.
-  + [convnet_svm.py](./SVM_classifiy/convnet_svm.py) is for the CNN features (requires [CNN-RFW](https://github.com/giovanichiachia/convnet-rfw))
-  + The result images are in [svm_2015_result](./SVM_classifiy/svm_2015_result)
++ Simple (Support Vector Machine (SVM) models)[SVM_classifiy](SVM_classifiy)
+  1. Train and cross validate model: [svm_fingerpint_liveness_detection_foldval.py](./SVM_classifiy/svm_fingerpint_liveness_detection_foldval.py) is for cross validation
+  2. Test model, and draw AUC and ROC curves: [svm_fingerprint_liveness_detection_2015.py](./SVM_classifiy/svm_fingerprint_liveness_detection_2015.py)
++ Convnet SVM models:
+  1. Extract convnet features: [CNN-RFW](https://github.com/giovanichiachia/convnet-rfw))
+  2. Train model: [convnet_svm.py](./SVM_classifiy/convnet_svm.py) is for the CNN feature (result images are in [svm_2015_result](./SVM_classifiy/svm_2015_result))
 
 ## Neural Network using Keras in python
-+ Simple Layer Network to classify the features:
+Simple Layer Neural Network models (models split based on what deatures they use):
   + BSIF Features: [2015DigPer_test_BSIF.py](./NeuralNetwork/2015DigPer_test_BSIF.py)
   + LPQ Features: [2015DigPer_test_LPQ.py](./NeuralNetwork/2015DigPer_test_LPQ.py)
   + WLD Features: [2015DigPer_test_WLD.py](./NeuralNetwork/2015DigPer_test_WLD.py)
   + Mix Features: [2015DigPer_test_MixFeat.py](./NeuralNetwork/2015DigPer_test_MixFeat.py)
 
-+ VGG16 model is trained using [train_vgg16.py](./NeuralNetwork/train_vgg16.py)
-+ VGG16+vector multibranch models are trained using [train_multi.py](./NeuralNetwork/train_multi.py). We first merge features using [merge_features.py](./NeuralNetwork/merge_features.py)
-+ Their data generator functions can be found in [gen.py](./NeuralNetwork/gen.py)
++ VGG16 Neural Network model;
+  1. Train and test model: [train_vgg16.py](./NeuralNetwork/train_vgg16.py)
+
++ VGG16+vector multibranch Neural Neetwork model:
+  1. Merge features: [merge_features.py](./NeuralNetwork/merge_features.py)
+  2. Train and test model: [train_multi.py](./NeuralNetwork/train_multi.py). 
+
+FYI: Their data generator functions can be found in [gen.py](./NeuralNetwork/gen.py)
 
 
 ## Models
