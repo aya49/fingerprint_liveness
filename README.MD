@@ -8,10 +8,10 @@ Data: We use the fingerprint images data set from "Liveness Detection Competitio
 
 1. (optional, recommended) For the image augmentation, please refer to: [augment_data.py](augment_data.py)
 2. Four feature extraction methods applied:
-  + Binary Statistical Image Filter(BSIF), in folder [BSIF_feature](BSIF_feature)
-  + Local Phase Quantization(LPQ), in folder [LPQ_feature](LPQ_feature)
-  + Weber Local Descriptor(WLD), in folder [WLD_feature](WLD_feature)
-  + Convnet Features: [convnet_nn.py](./NeuralNetwork/convnet_nn.py)  
+    + Binary Statistical Image Filter(BSIF), in folder [BSIF_feature](BSIF_feature)
+    + Local Phase Quantization(LPQ), in folder [LPQ_feature](LPQ_feature)
+    + Weber Local Descriptor(WLD), in folder [WLD_feature](WLD_feature)
+    + Convnet Features: [convnet_nn.py](./NeuralNetwork/convnet_nn.py)  
   
 ## SVM using sklearn in python
 + Simple (Support Vector Machine (SVM) models)[SVM_classifiy](SVM_classifiy)
