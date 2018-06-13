@@ -14,11 +14,13 @@ Data: We use the fingerprint images data set from "Liveness Detection Competitio
     + Convnet Features: [convnet_nn.py](./NeuralNetwork/convnet_nn.py)  
   
 ## 2. SVM using sklearn in python
-+ Simple (Support Vector Machine (SVM) models)[SVM_classifiy](SVM_classifiy)
++ Simple (Support Vector Machine (SVM) models) [SVM_classifiy](SVM_classifiy):
   1. Train and cross validate model: [svm_fingerpint_liveness_detection_foldval.py](./SVM_classifiy/svm_fingerpint_liveness_detection_foldval.py) is for cross validation
   2. Test model, and draw AUC and ROC curves: [svm_fingerprint_liveness_detection_2015.py](./SVM_classifiy/svm_fingerprint_liveness_detection_2015.py)
 + Convnet SVM models:
-  1. Extract convnet features: [CNN-RFW](https://github.com/giovanichiachia/convnet-rfw))
+  1. Extract convnet features: [CNN-RFW](https://github.com/giovanichiachia/convnet-rfw)
+    + Run "convnet_nn.py" with DO_TRAINING=True to generate the "pretrain.h5" model file, and then set DO_TRAINING=False to reuse previously trained model saved to this file
+    + "cnnrandom" is required to extract features
   2. Train model: [convnet_svm.py](./SVM_classifiy/convnet_svm.py) is for the CNN feature (result images are in [svm_2015_result](./SVM_classifiy/svm_2015_result))
 
 ## 2. Neural Network using Keras in python
@@ -28,7 +30,7 @@ Simple Layer Neural Network models (models split based on what deatures they use
   + WLD Features: [2015DigPer_test_WLD.py](./NeuralNetwork/2015DigPer_test_WLD.py)
   + Mix Features: [2015DigPer_test_MixFeat.py](./NeuralNetwork/2015DigPer_test_MixFeat.py)
 
-+ VGG16 Neural Network model;
++ VGG16 Neural Network model:
   1. Train and test model: [train_vgg16.py](./NeuralNetwork/train_vgg16.py)
 
 + VGG16+vector multibranch Neural Neetwork model:
