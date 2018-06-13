@@ -27,8 +27,8 @@ Data set: We use the fingerprint images data set from "Liveness Detection Compet
   2. Test model, and draw AUC and ROC curves: [svm_fingerprint_liveness_detection_2015.py](./SVM_classifiy/svm_fingerprint_liveness_detection_2015.py)
 + Convnet SVM models:
   1. Extract convnet features: [CNN-RFW](https://github.com/giovanichiachia/convnet-rfw)
-    + Run "convnet_nn.py" with DO_TRAINING=True to generate the "pretrain.h5" model file, and then set DO_TRAINING=False to reuse previously trained model saved to this file
-    + "cnnrandom" is required to extract features
+      + Run "convnet_nn.py" with DO_TRAINING=True to generate the "pretrain.h5" model file, and then set DO_TRAINING=False to reuse previously trained model saved to this file
+      + "cnnrandom" is required to extract features
   2. Train model: [convnet_svm.py](./SVM_classifiy/convnet_svm.py) is for the CNN feature (result images are in [svm_2015_result](./SVM_classifiy/svm_2015_result))
 
 ## 2. Neural Network using Keras in python
