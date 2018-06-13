@@ -1,10 +1,25 @@
 # Fingerprint Liveness Detection Project
 
-In this project, we explored two different methods (SVM & Neural Network) for fingerprint liveness detection. Please change input and output paths in the scripts asvappropriate and run in the order as numbered, bullet points mean scripts can be ran in any order
+In this project, we explored two different classification models (SVM & Neural Network) for fingerprint liveness detection.
 
-Data: We use the fingerprint images data set from "Liveness Detection Competitions 2015" [Available Here](http://livdet.org/registration.php).
+## Abstract
+We first extract features from fingerprint images and then develop machine learning models such as neural networks and SVM for classification of real and fake fingerprints. The feature extraction methods that we used were BSIF, WLD, LPQ, and CNN-RFW. When training our models, we implemented 10-fold cross-validation and some techniques to combat over-fitting such as dimensionality reduction of features and Gaussian noise layers. In order to have a larger training set, we also introduced new training data by augmenting available training images. We were able to achieve test accuracy ranging from 80% to 99% from different models, in which we outperform most of the contestants of the LivDet 2015 competition on Digital Persona data set.
 
-## 1. Feature extraction
+See [full text](fingerprint-liveness-detection.pdf)
+
+### Summary of models used in this repository
+![alt text](models.png)
+
+### Results
+![alt text](result.PNG)
+
+
+## Implementation
+Please change input and output paths in the scripts asvappropriate and run in the order as numbered, bullet points mean scripts can be ran in any order.
+
+Data set: We use the fingerprint images data set from "Liveness Detection Competitions 2015" [Available Here](http://livdet.org/registration.php).
+
+### 1. Feature extraction
 
 1. (optional, recommended) For the image augmentation, please refer to: [augment_data.py](augment_data.py)
 2. Four feature extraction methods applied:
@@ -39,9 +54,3 @@ Simple Layer Neural Network models (models split based on what deatures they use
 
 FYI: Their data generator functions can be found in [gen.py](./NeuralNetwork/gen.py)
 
-
-## Models
-![alt text](models.png)
-
-## Results
-![alt text](result.PNG)
