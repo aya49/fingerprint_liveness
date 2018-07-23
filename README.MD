@@ -2,6 +2,8 @@
 
 In this project, we explored two different classification models (SVM & Neural Network) for fingerprint liveness detection.
 
+Alice Yue, Anton Cherniavskyi, Guiliang Liu, Guoliang Gan
+
 ## About
 We first extract features from fingerprint images and then develop machine learning models such as neural networks and SVM for classification of real and fake fingerprints. The feature extraction methods that we used were BSIF, WLD, LPQ, and CNN-RFW. When training our models, we implemented 10-fold cross-validation and some techniques to combat over-fitting such as dimensionality reduction of features and Gaussian noise layers. In order to have a larger training set, we also introduced new training data by augmenting available training images. We were able to achieve test accuracy ranging from 80% to 99% from different models, in which we outperform most of the contestants of the LivDet 2015 competition on Digital Persona data set.
 
